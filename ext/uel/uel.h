@@ -105,7 +105,6 @@ struct uel_bert_data *uel_encode_ptr_atom(const char *name, uint16_t len);
 struct uel_bert_data *uel_encode_ptr_small_atom(const char *name, uint8_t len);
 
 /* ruby symbols */
-VALUE rb_hash_new_with_size(st_index_t size);
 VALUE rb_hash_keys(VALUE hash);
 
 #endif

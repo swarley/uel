@@ -186,7 +186,7 @@ VALUE uel_read_map(struct uel_bert_data *data) {
     VALUE value;
 
     arity = uel_read32(data);
-    hash = rb_hash_new_with_size(arity);
+    hash = rb_hash_new();
     for (uint32_t index = 0; index < arity; index++) {
         key = uel_decode_term(data);
         value = uel_decode_term(data);
