@@ -1,7 +1,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "UEL"
-  spec.version       = "0.1.0"
+  spec.version       = "0.1.1"
   spec.authors       = ["Matthew Carey"]
   spec.email         = ["matthew.b.carey@gmail.com"]
 
