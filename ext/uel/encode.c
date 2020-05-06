@@ -240,11 +240,10 @@ struct uel_bert_data *uel_encode_hash(VALUE value) {
     VALUE keys;
     VALUE key;
 
-    keys = rb_hash_keys(value);
+    keys = rb_funcall(value, rb_intern("keys"), 0);
     hash_size = RARRAY_LEN(keys);
     data = malloc(sizeof(struct uel_bert_data));
     data_ary = malloc(sizeof(struct uel_bert_data *) * (hash_size * 2));
-    keys = rb_hash_keys(value);
 
     for (; key_index < hash_size; key_index++) {
         key = rb_ary_entry(keys, key_index);
