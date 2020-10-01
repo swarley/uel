@@ -1,3 +1,5 @@
+### Please use [vox-etf](https://github.com/swarley/vox-etf) if possible, as it's more stable.
+
 # UEL (Untitled ETF Lib)
 
 The other ETF lib I could find is pretty slow, so here's this one. I couldn't think of a good name.
